@@ -1,0 +1,124 @@
+/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-gradient: linear-gradient(45deg, #007bff, #00ff88);
+    --dark-bg: #121212;
+}
+
+body {
+    /* ប្តូរពី Poppins មក Kantumruy Pro ដើម្បីឱ្យស្អាតទាំងខ្មែរ និងអង់គ្លេស */
+    font-family: 'Moul', 'Poppins', sans-serif; 
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+    line-height: 1.6; 
+}
+
+h1, h2, h3, .cool-title {
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+/* --- LOGIN SECTION --- */
+#login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cool-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: none;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+}
+
+.btn-cool {
+    background: var(--primary-gradient);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.btn-cool:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* --- MAIN WEBSITE SECTION --- */
+#main-content {
+    display: none; /* Hidden until login */
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+}
+
+.nav-user-email {
+    color: #00ff88 !important;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.5px;
+    margin-right: 15px;
+    font-size: 0.9rem;
+    background: rgba(0, 255, 136, 0.1); 
+    padding: 5px 12px;
+    border-radius: 50px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.g3boats.com/wp-content/uploads/2025/01/10-Must-Visit-Fishing-Spots.jpg') center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.section-padding { padding: 80px 0; }
+
+.menu-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(231, 5, 5, 0.05);
+    transition: 0.3s;
+    text-align: center;
+    background: white;
+}
+
+.menu-card:hover { transform: translateY(-10px); }
+
+.menu-card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+}
