@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    /* ប្តូរពី Poppins មក Kantumruy Pro ដើម្បីឱ្យស្អាតទាំងខ្មែរ និងអង់គ្លេស */
     font-family: 'Moul', 'Poppins', sans-serif; 
     background-color: #f0f2f5;
     overflow-x: hidden;
@@ -121,4 +120,56 @@ footer {
     background: #1a1a1a;
     color: white;
     padding: 40px 0;
+}
+
+/* Order Quantity Badge */
+.order-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--dark-bg);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* QR Code Container */
+.qr-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px dashed #dee2e6;
+}
+
+#paymentQR {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* បន្ថែមចលនា Smooth សម្រាប់ Modal */
+.modal.fade .modal-dialog {
+    transform: scale(0.6); /* ឱ្យវាផ្ដើមចេញពីទំហំតូច */
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1); /* នៅពេលបង្ហាញ ឱ្យវាពង្រីកមកទំហំធម្មតាវិញ */
+}
+
+/* បន្ថែមស្រមោល និងរាងមូលឱ្យកាន់តែស្អាត */
+.modal-content {
+    border-radius: 20px !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ចលនាសម្រាប់ប៊ូតុង "I have paid" */
+.btn-cool {
+    transition: all 0.3s ease;
+}
+
+.btn-cool:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
 }
